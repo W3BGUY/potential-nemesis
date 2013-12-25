@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Udacity: Web Development Lesson2, Homework2 - cbastian</title>
+    <style>
+      .col1{
+        width:120px;
+        display:block;
+        float:left;
+        font-weight:bold;
+      }
+      .col2{
+        display:inline;
+      }
+      .col2 input{
+        width:170px;
+        background-color:#ccc;
+      }
+      .col2 input:hover{
+        width:170px;
+        background-color:#eee;
+      }
+      .col2 input:focus{
+        width:170px;
+        background-color:#eee;
+      }
+      .col3{
+        display:inline;
+        font-weight:bold;
+        color:#f00;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h2>Signup</h2>
+    <form method="post">
+      <span class="col1">
+        <span>Username</span>
+      </span>
+      <span class="col2">
+        <input type="text" name="username" id="username"/>
+      </span>
+      <span class="col3">
+        Error
+      </span>
+      <br />
+      <span class="col1">
+        <span>Password</span>
+      </span>
+      <span class="col2">
+        <input type="text" name="password" id="password"/>
+      </span>
+      <span class="col3">
+        Error
+      </span>
+      <br />
+      <span class="col1">
+        <span>Verify Password</span>
+      </span>
+      <span class="col2">
+        <input type="text" name="verify" id="verify"/>
+      </span>
+      <span class="col3">
+        Error
+      </span>
+      <br />
+      <span class="col1">
+        <span>Email (optional)</span>
+      </span>
+      <span class="col2">
+        <input type="text" name="email" id="email"/>
+      </span>
+      <span class="col3">
+        Error
+      </span>
+      <br />
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
