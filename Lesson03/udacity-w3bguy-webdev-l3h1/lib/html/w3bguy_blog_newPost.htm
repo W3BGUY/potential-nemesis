@@ -1,0 +1,21 @@
+{% extends "blogBase.htm" %}
+
+{% block content %}
+  <h2>New Blog Post</h2>
+
+    <form method="post">
+      <label>
+        <div>Title</div>
+        <input type="text" name="subject" value="{{blogSubject}}" />
+      </label>
+
+      <label>
+        <div>Entry</div>
+        <textarea name="content">{{blogContent}}</textarea>
+      </label>
+
+      <div class="error">{{error}}</div>
+
+      <input type="submit" />
+    </form>
+{% endblock %}

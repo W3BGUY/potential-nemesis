@@ -1,0 +1,10 @@
+{% extends "blogBase.htm" %}
+
+{% block content %}
+
+  {% for p in blogDBO %}
+    {{ p.render() | safe }}
+    <br /><br />
+  {% endfor %}
+  
+{% endblock %}
